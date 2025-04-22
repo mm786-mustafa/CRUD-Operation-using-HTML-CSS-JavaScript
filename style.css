@@ -3,56 +3,85 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+    font-family: Arial, sans-serif;
 }
 
-#registration #register-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 2rem;
-}
-
-#registration #register-form hr {
-    border: 1px solid;
-    width: 100%;
-}
-
-#registration #register-form label {
-    font-size: large;
-    margin: 0.5rem 0;
-}
-
-#registration #register-form input {
-    width: 100%;
-    height: 2rem;
-    padding: 0.1rem;
-}
-
-button[type] {
-    font-size: large;
-    padding: 0.2rem 0.5rem;
-}
-
+#registration #register-form,
 #registration #view-records {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid;
-    border-radius: 5px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
     padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 90%;
+    max-width: 600px;
+}
+
+#registration #register-form hr {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+#registration #register-form label {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+#registration #register-form input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+#registration #register-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button[type] {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type]:hover {
+    background-color: #0056b3;
 }
 
 #registration #view-records #record-table {
-    border: 1px solid;
+    border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #registration #view-records #record-table thead th {
     padding: 8px;
+    text-align: left;
+    background-color: #007BFF;
+    color: white;
+}
+
+#registration #view-records #record-table tbody td {
+    padding: 8px;
+    border-top: 1px solid #ddd;
 }
