@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="registration">
+        <form id="register-form">
+            <h1>Register</h1>
+            <p>Enter the details of the record you want to add.</p>
+            <hr>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" >
+            <label for="city">City</label>
+            <input type="city" id="city" name="city" placeholder="Enter City" >
+            <label for="salary">Salary</label>
+            <input type="tel" id="salary" name="salary" placeholder="Enter Salary" >
+            <hr>
+            <button type="submit" onclick="onSubmitForm()">Submit</button>
+        </form>
+        <div id="view-records">
+            <h1>Records</h1>
+            <table id="record-table">
+                <thead>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
